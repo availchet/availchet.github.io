@@ -5,10 +5,18 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="my-page">
-	<meta name="author" content="availchet">
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta http-equiv="content-language" content="nl" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="author" content="availchet" />
+	<meta name="description" content="my-page" />
+
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="14 days" />
 
 	<title>Hello World</title>
 
@@ -18,6 +26,7 @@
 	<!-- custom css -->
 	<link href="css/freelancer.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,6 +55,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand animated rubberBand" href="#page-top">Home</a>
 			</div>
@@ -64,6 +74,9 @@
 					</li>
 					<li>
 						<a class="page-scroll animated bounceInRight" href="#contact">Contact</a>
+					</li>
+					<li>
+						<a class="page-scroll animated bounceInRight" href="#quotes">Quotes</a>
 					</li>
 					<li>
 						<a class="page-scroll animated bounceInRight" href="#footer">Socialise</a>
@@ -87,7 +100,7 @@
 						<div class="animated bounceIn">
 							<span class="skills animated bounceInRight">Developer</span><span class="skills animated bounceInLeft"> - Designer </span><span class="skills animated bounceInRight"> - Coder</span><span class="skills animated bounceInLeft"> - Learner</span>
 						</div>
-						<br>"To code is human, to debug is divine..."
+						
 					</div>
 				</div>
 			</div>
@@ -99,8 +112,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="animated infinite bounce">Portfolio</h2>
-					<hr class="star-primary animated infinite flip">
+					<h2>Portfolio</h2>
+					<hr class="star-primary">
 				</div>
 			</div>
 			<div class="row">
@@ -139,21 +152,29 @@
 			</div>
 		</div>
 	</section>
+	<hr>
 
 	<!-- About Section -->
-	<section class="success" id="about">
+	<section id="about"><!-- class="success" //makes alt colour;-->
 		<div class="container">
 			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>About Me</h2>
+					<hr class="star-primary">
+				</div>
+
 				<div class="col-lg-4 col-lg-offset-2">
 					<p>My Artistic work is simply meant to capture humorous or aesthetically pleasing images and ideas that tickle my fancy.</p>
 
 				</div>
 
 				<div class="col-lg-4">
-					<p>My academic work is dedicated to finding the truth about topics i find intellectually interesting.</p>
+					<p>My academic work is dedicated to finding the truth about topics I find intellectually interesting.</p>
 				</div>
 				<div class="col-lg-8 col-lg-offset-2 text-center">
-					<p>Unfortunately, I haven't accomplishen enough in my life to have a full-fledged CV yet, I do however have a resume though. You can click the button below to download it.</p>
+					<hr />
+					<p>Unfortunately, I haven't accomplished enough in my life to have a full-fledged CV yet, I do however have a resume though. You can click the button below to download it.</p>
+					<br />
 					<button type="submit" class="btn btn-lg btn outline" onclick="window.open('ChetanyaKandhari.pdf')">
 						<i class="fa fa-download"></i> Download Resume
 					</button>
@@ -161,14 +182,15 @@
 			<div>
 		</div>
 	</section>
+	<hr>
 
 	<!--Contact Section -->
 	<section id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="animated infinite bounce">Contact Me</h2>
-					<hr class="star-primary animated infinite flip">
+					<h2>Contact Me</h2>
+					<hr class="star-primary">
 				</div>
 			</div>
 			<div class="row">
@@ -209,6 +231,9 @@
 						<div class="row">
 							<div class="form-group col-xs-12">
 								<button type="submit" class="btn btn-success btn-lg">Send</button>
+								<button type="submit" class="btn btn-success btn-lg">
+									<a href="https://docs.google.com/forms/d/1FyS5diJX4RrxJcpUeRS05PWnuGjW0qsmFjfT8ectjlM/viewform" style="color: #fff">Try Google Forms</a>
+								</button>
 							</div>
 						</div>
 					</form>
@@ -216,6 +241,42 @@
 			</div>
 		</div>
 	</section>
+	<hr>
+
+	<!-- Quotes Section -->
+	<section id="quotes">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+
+					<h2>Quotes</h2>
+					<hr class="star-primary">
+
+					<p class="lead">
+    	     	       “Protons give an atom its identity, electrons its personality.”
+	            	    <br> - Bill Bryson, A short history of nearly everything
+    	        	</p>
+        	    	<hr>
+            		<p class="lead">
+            	        “Life without knowledge is death in disguise.”
+                	    <br> - Talib Kweli
+    	            </p>
+        	        <hr>
+        	        <p class="lead">
+	        	        “You can do anything you set your mind to.”
+    	        	    <br> - Benjamin Franklin
+        		    </p>
+        		    <hr>
+        	    	<p class="lead">
+    	                “If I had asked people what they wanted, they would have said faster horses. ”
+        	            <br> - Henry Ford
+            	    </p>
+            	    <hr><p class="lead">"To code is human, to debug is divine..."</p>
+            	</div>
+            </div>
+        </div>
+    </section>
+    <hr>
 
 	<!-- Footer -->
 	<section id="footer">
