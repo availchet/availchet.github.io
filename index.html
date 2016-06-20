@@ -46,23 +46,22 @@
 
 
 	<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class = "navbar navbar-default navbar-fixed-top" role = "navigation">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header page-scroll">					
-				<button type="button" class="navbar-toggle" data-toggle="colapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar">Portfolio</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand animated rubberBand" href="#page-top">Home</a>
+			<div class = "navbar-header page-scroll">
+    			<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#bs-example-navbar-collapse-1">
+					<span class = "sr-only">Toggle navigation</span>
+        			<span class = "icon-bar"></span>
+        			<span class = "icon-bar"></span>
+        			<span class = "icon-bar"></span>
+    			</button>
+				<a class = "navbar-brand animated rubberBand" href = "#page-top">Home</a>
 			</div>
-
+   
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
+			<div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+    			<ul class = "nav navbar-nav navbar-right">
 					<li class="hidden">
 						<a href="#page-top"></a>
 					</li>
@@ -82,11 +81,12 @@
 						<a class="page-scroll animated bounceInRight" href="#footer">Socialise</a>
 					</li>
 				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
+    		</div>
+    		<!-- /.navbar-collapse -->
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
+
 
 	<!-- Header -->
 	<header>
@@ -101,7 +101,7 @@
 							<span class="skills animated bounceInRight">Developer</span><span class="skills animated bounceInLeft"> - Designer </span><span class="skills animated bounceInRight"> - Coder</span><span class="skills animated bounceInLeft"> - Learner</span>
 						</div>
 					</div>
-					<a href="about/me.html"><p class="ab">More About Me</p></a>
+
 				</div>
 			</div>
 		</div>
@@ -175,6 +175,9 @@
 					<hr />
 					<p>Unfortunately, I haven't accomplished enough in my life to have a full-fledged CV yet, I do however have a resume though. You can click the button below to download it.</p>
 					<br />
+					<button type="submit" class="btn btn-lg btn outline" onclick="window.open('about/me.html')">
+						<i class="fa fa-star"></i>More about Me <i class="fa fa-star"></i>
+					</button>
 					<button type="submit" class="btn btn-lg btn outline" onclick="window.open('ChetanyaKandhari.pdf')">
 						<i class="fa fa-download"></i> Download Resume
 					</button>
@@ -364,7 +367,7 @@
 				<div class="row">
 					<hr class="star animated infinite fadeIn">
 					<div class="col-lg-12 footer-col col-md-4">
-						<h6> Copyright &copy; Chetanya Kandhari 2016</h6>
+						<h6> Copyright &copy; <a href="about/me.html">Chetanya Kandhari</a> 2016 </h6>
 						<hr class="star animated infinite fadeIn">
 					</div>
 				</div>
