@@ -1,6 +1,6 @@
-#GitHub Pages website
-
-Personal portfolio site mentioning professional and personal details and links to all social platforms with an option to download resume.
+#Personal Website
+Implemented responsive web design using bootstrap and a functional contact form using php
+(form doesn't work on github pages as it does not support php)
 
 #About Me
 availchet.github.io/about/me.html
