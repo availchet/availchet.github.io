@@ -79,7 +79,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist",
+    "deploy": "gh-pages -b master -d dist --force",
     "start": "webpack-dev-server --hot",
     "build": "webpack --mode=production --env=production --display-error-details --verbose",
     "test": "jest --forceExit --detectOpenHandles --passWithNoTests",
