@@ -17,7 +17,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test -- --coverage --watchAll=false && npm run deploy"
+      "pre-push": "npm test -- --coverage --watchAll=false"
     }
   },
   "dependencies": {
@@ -55,7 +55,6 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
     "file-loader": "^6.0.0",
-    "gh-deploy": "^0.2.3",
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.2.0",
     "husky": "^4.2.3",
@@ -80,7 +79,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-deploy -b master -d dist --force",
+    "deploy": "gh-pages -b master -d dist",
     "start": "webpack-dev-server --hot",
     "build": "webpack --mode=production --env=production --display-error-details --verbose",
     "test": "jest --forceExit --detectOpenHandles --passWithNoTests",
