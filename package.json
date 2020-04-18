@@ -17,7 +17,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test -- --coverage --watchAll=false"
+      "pre-push": "npm test -- --coverage --watchAll=false && npm run deploy"
     }
   },
   "dependencies": {
@@ -79,7 +79,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b master -d dist",
     "start": "webpack-dev-server --hot",
     "build": "webpack --mode=production --env=production --display-error-details --verbose",
     "test": "jest --forceExit --detectOpenHandles --passWithNoTests",

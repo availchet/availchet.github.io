@@ -23,6 +23,7 @@ jspm_packages/
 
 # production
 /build
+/dist
 
 # dotenv environment variables file
 .env
