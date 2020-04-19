@@ -3,6 +3,7 @@ import React from 'react';
 import LinkedInIcon from 'assets/linkedin.svg';
 import GitHubIcon from 'assets/github.svg';
 import MailIcon from 'assets/mail.svg';
+import ResumeIcon from 'assets/resume.svg';
 
 import './App.css';
 
@@ -49,18 +50,17 @@ function App() {
                         >
                             <MailIcon className="icon" viewBox="0 0 512 512" />
                         </a>
+                        <a
+                            className="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-title="Résumé"
+                            href="/assets/resume.pdf"
+                        >
+                            <ResumeIcon className="icon" viewBox="0 0 512 512" />
+                        </a>
                     </div>
                 </header>
-                <nav className="nav-home">
-                    <a
-                        className="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/resume.pdf"
-                    >
-                        Résumé
-                    </a>
-                </nav>
                 <footer className="footer-main">
                     Made with &#9829; by{' '}
                     <a
