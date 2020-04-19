@@ -9,8 +9,8 @@
   },
   "lint-staged": {
     "**/*.js": [
-      "eslint --ignore-pattern '/old/' --fix",
       "prettier-eslint --write",
+      "eslint --ignore-pattern '/old/' --fix",
       "git add"
     ]
   },
