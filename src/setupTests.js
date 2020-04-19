@@ -9,8 +9,8 @@ Enzyme.configure({ adapter: new Adapter() });
 global.fetch = fetch;
 global.scrollTo = jest.fn();
 global.console = {
-  log: jest.fn(),
-  info: jest.fn(),
-  error: jest.fn(),
-  warn: jest.fn(),
+    log: jest.fn(),
+    info: jest.fn(),
+    error: jest.fn(),
+    warn: jest.fn(),
 };

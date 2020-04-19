@@ -88,6 +88,10 @@ module.exports = webpackEnv => {
                         },
                     },
                 },
+                {
+                    test: /\.svg$/,
+                    use: ['@svgr/webpack'],
+                },
                 // "file" loader makes sure the assets get served by WebpackDevServer.
                 {
                     test: /.(woff|woff2|eot|ttf|otf)$/,
@@ -101,7 +105,7 @@ module.exports = webpackEnv => {
                 // "url" loader works like "file" loader except that it embeds assets
                 // smaller than specified limit in bytes as data URLs to avoid requests.
                 {
-                    test: /.(bmp|gif|jpe?g|png|svg)$/,
+                    test: /.(bmp|gif|jpe?g|png)$/,
                     exclude: /node_modules/,
                     loader: require.resolve('url-loader'),
                     options: {
