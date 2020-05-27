@@ -17,10 +17,9 @@ function App() {
                     </a>
                     <h1 className="title">Chetanya Kandhari</h1>
                     <h2 className="description">
-                        <span className="skills">Developer</span>
-                        <span className="skills"> - Designer </span>
-                        <span className="skills"> - Thinker</span>
-                        <span className="skills"> - Learner</span>
+                        <span className="skills">Software Engineer</span>
+                        &nbsp;|&nbsp;
+                        <span className="skills">Tech Enthusiast</span>
                     </h2>
                     <div className="connect-links">
                         <a

@@ -1,0 +1,9 @@
+body {
+    overflow: hidden;
+}
+
+#info {
+    pointer-events: none;
+    user-select: none;
+    padding: 10px;
+}
