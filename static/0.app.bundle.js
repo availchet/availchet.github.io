@@ -1,28 +1,35 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
 
-/***/ 17:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(29);
-
-
-/***/ }),
-
 /***/ 22:
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+module.exports = __webpack_require__(38);
+
 
 /***/ }),
 
-/***/ 28:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
 
-/***/ 29:
+/***/ 31:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 38:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34,11 +41,11 @@ var react = __webpack_require__(0);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-dom/index.js
-var react_dom = __webpack_require__(14);
+var react_dom = __webpack_require__(15);
 var react_dom_default = /*#__PURE__*/__webpack_require__.n(react_dom);
 
 // EXTERNAL MODULE: ./src/index.css
-var src = __webpack_require__(22);
+var src = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./node_modules/react-router-dom/esm/react-router-dom.js
 var react_router_dom = __webpack_require__(9);
@@ -142,7 +149,7 @@ function SvgHeart(props) {
 
 /* harmony default export */ var heart = (SvgHeart);
 // CONCATENATED MODULE: ./src/Home.js
-var _jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Home.js";function App(){return/*#__PURE__*/react_default.a.createElement("div",{className:"wrapper-normal",__self:this,__source:{fileName:_jsxFileName,lineNumber:12,columnNumber:9}},/*#__PURE__*/react_default.a.createElement("div",{className:"page home",__self:this,__source:{fileName:_jsxFileName,lineNumber:13,columnNumber:13}},/*#__PURE__*/react_default.a.createElement("header",{className:"header-home animated",__self:this,__source:{fileName:_jsxFileName,lineNumber:14,columnNumber:17}},/*#__PURE__*/react_default.a.createElement("a",{className:"link",href:"https://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:15,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("img",{className:"selfie",alt:"Chetanya Kandhari",src:profile,__self:this,__source:{fileName:_jsxFileName,lineNumber:16,columnNumber:25}})),/*#__PURE__*/react_default.a.createElement("h1",{className:"title",__self:this,__source:{fileName:_jsxFileName,lineNumber:18,columnNumber:21}},"Chetanya Kandhari"),/*#__PURE__*/react_default.a.createElement("h2",{className:"description",__self:this,__source:{fileName:_jsxFileName,lineNumber:19,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:20,columnNumber:25}},"Developer"),/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:21,columnNumber:25}}," - Designer "),/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:22,columnNumber:25}}," - Thinker"),/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:23,columnNumber:25}}," - Learner")),/*#__PURE__*/react_default.a.createElement("div",{className:"connect-links",__self:this,__source:{fileName:_jsxFileName,lineNumber:25,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"LinkedIn",href:"https://www.linkedin.com/in/chetanya-kandhari/",__self:this,__source:{fileName:_jsxFileName,lineNumber:26,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(linkedin,{className:"icon",__self:this,__source:{fileName:_jsxFileName,lineNumber:33,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"GitHub",href:"https://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:35,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(github,{className:"icon",__self:this,__source:{fileName:_jsxFileName,lineNumber:42,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"E-mail",href:"mailto:availchet@gmail.com",__self:this,__source:{fileName:_jsxFileName,lineNumber:44,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(mail,{className:"icon",viewBox:"0 0 512 512",__self:this,__source:{fileName:_jsxFileName,lineNumber:51,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"R\xE9sum\xE9",href:"/assets/resume.pdf",__self:this,__source:{fileName:_jsxFileName,lineNumber:53,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(resume,{className:"icon",viewBox:"0 0 512 512",__self:this,__source:{fileName:_jsxFileName,lineNumber:60,columnNumber:29}})))),/*#__PURE__*/react_default.a.createElement("footer",{className:"footer-main",__self:this,__source:{fileName:_jsxFileName,lineNumber:64,columnNumber:17}},"Made with ",/*#__PURE__*/react_default.a.createElement(heart,{className:"heart",__self:this,__source:{fileName:_jsxFileName,lineNumber:65,columnNumber:31}})," by \xA0",/*#__PURE__*/react_default.a.createElement("a",{target:"_blank",rel:"noopener noreferrer",className:"author-link",href:"http://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:66,columnNumber:21}},"Chetanya Kandhari"))));}/* harmony default export */ var Home = (App);
+var _jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Home.js";function App(){return/*#__PURE__*/react_default.a.createElement("div",{className:"wrapper-normal",__self:this,__source:{fileName:_jsxFileName,lineNumber:12,columnNumber:9}},/*#__PURE__*/react_default.a.createElement("div",{className:"page home",__self:this,__source:{fileName:_jsxFileName,lineNumber:13,columnNumber:13}},/*#__PURE__*/react_default.a.createElement("header",{className:"header-home animated",__self:this,__source:{fileName:_jsxFileName,lineNumber:14,columnNumber:17}},/*#__PURE__*/react_default.a.createElement("a",{className:"link",href:"https://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:15,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("img",{className:"selfie",alt:"Chetanya Kandhari",src:profile,__self:this,__source:{fileName:_jsxFileName,lineNumber:16,columnNumber:25}})),/*#__PURE__*/react_default.a.createElement("h1",{className:"title",__self:this,__source:{fileName:_jsxFileName,lineNumber:18,columnNumber:21}},"Chetanya Kandhari"),/*#__PURE__*/react_default.a.createElement("h2",{className:"description",__self:this,__source:{fileName:_jsxFileName,lineNumber:19,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:20,columnNumber:25}},"Software Engineer"),"\xA0|\xA0",/*#__PURE__*/react_default.a.createElement("span",{className:"skills",__self:this,__source:{fileName:_jsxFileName,lineNumber:22,columnNumber:25}},"Tech Enthusiast")),/*#__PURE__*/react_default.a.createElement("div",{className:"connect-links",__self:this,__source:{fileName:_jsxFileName,lineNumber:24,columnNumber:21}},/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"LinkedIn",href:"https://www.linkedin.com/in/chetanya-kandhari/",__self:this,__source:{fileName:_jsxFileName,lineNumber:25,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(linkedin,{className:"icon",__self:this,__source:{fileName:_jsxFileName,lineNumber:32,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"GitHub",href:"https://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:34,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(github,{className:"icon",__self:this,__source:{fileName:_jsxFileName,lineNumber:41,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"E-mail",href:"mailto:availchet@gmail.com",__self:this,__source:{fileName:_jsxFileName,lineNumber:43,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(mail,{className:"icon",viewBox:"0 0 512 512",__self:this,__source:{fileName:_jsxFileName,lineNumber:50,columnNumber:29}})),/*#__PURE__*/react_default.a.createElement("a",{className:"link",target:"_blank",rel:"noopener noreferrer","data-title":"R\xE9sum\xE9",href:"/assets/resume.pdf",__self:this,__source:{fileName:_jsxFileName,lineNumber:52,columnNumber:25}},/*#__PURE__*/react_default.a.createElement(resume,{className:"icon",viewBox:"0 0 512 512",__self:this,__source:{fileName:_jsxFileName,lineNumber:59,columnNumber:29}})))),/*#__PURE__*/react_default.a.createElement("footer",{className:"footer-main",__self:this,__source:{fileName:_jsxFileName,lineNumber:63,columnNumber:17}},"Made with ",/*#__PURE__*/react_default.a.createElement(heart,{className:"heart",__self:this,__source:{fileName:_jsxFileName,lineNumber:64,columnNumber:31}})," by \xA0",/*#__PURE__*/react_default.a.createElement("a",{target:"_blank",rel:"noopener noreferrer",className:"author-link",href:"http://github.com/availchet",__self:this,__source:{fileName:_jsxFileName,lineNumber:65,columnNumber:21}},"Chetanya Kandhari"))));}/* harmony default export */ var Home = (App);
 // CONCATENATED MODULE: ./src/assets/oh_snap.jpg
 /* harmony default export */ var oh_snap = (__webpack_require__.p + "static/media/oh_snap.dfb61b15.jpg");
 // CONCATENATED MODULE: ./src/Error.js
@@ -151,10 +158,35 @@ var Error_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Error.js
 /* harmony default export */ var oh_snap_404 = (__webpack_require__.p + "static/media/oh_snap_404.2546c0f2.jpg");
 // CONCATENATED MODULE: ./src/Error404.js
 var Error404_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Error404.js";function Error404(){return/*#__PURE__*/react_default.a.createElement("section",{className:"lost-container",__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:7,columnNumber:9}},/*#__PURE__*/react_default.a.createElement("div",{className:"link",__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:8,columnNumber:13}},/*#__PURE__*/react_default.a.createElement("img",{className:"selfie",alt:"",src:oh_snap_404,__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:9,columnNumber:17}})),/*#__PURE__*/react_default.a.createElement("h1",{__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:11,columnNumber:13}},"Not found"),/*#__PURE__*/react_default.a.createElement("p",{className:"not-found-description",__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:12,columnNumber:13}},"Sorry it looks like we couldn't find the what you're looking for. Click the button below to go back."),/*#__PURE__*/react_default.a.createElement("a",{href:"/",className:"link-button",__self:this,__source:{fileName:Error404_jsxFileName,lineNumber:16,columnNumber:13}},"Return to the app"));}/* harmony default export */ var src_Error404 = (Error404);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
+var classCallCheck = __webpack_require__(16);
+var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
+var createClass = __webpack_require__(17);
+var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
+var inherits = __webpack_require__(18);
+var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
+var possibleConstructorReturn = __webpack_require__(19);
+var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
+var getPrototypeOf = __webpack_require__(10);
+var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
+
+// EXTERNAL MODULE: ./src/XEyes/XEyes.css
+var XEyes_XEyes = __webpack_require__(31);
+
+// CONCATENATED MODULE: ./src/XEyes/index.js
+var XEyes_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/XEyes/index.js";function _createSuper(Derived){return function(){var Super=getPrototypeOf_default()(Derived),result;if(_isNativeReflectConstruct()){var NewTarget=getPrototypeOf_default()(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return possibleConstructorReturn_default()(this,result);};}function _isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Date.prototype.toString.call(Reflect.construct(Date,[],function(){}));return true;}catch(e){return false;}}var src_XEyes_XEyes=/*#__PURE__*/function(_React$Component){inherits_default()(XEyes,_React$Component);var _super=_createSuper(XEyes);function XEyes(){var _this;classCallCheck_default()(this,XEyes);for(var _len=arguments.length,args=new Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}_this=_super.call.apply(_super,[this].concat(args));_this.drawEye=function(context,size,x,y,cx,cy){var dx=x-cx;var dy=y-cy;var angle=Math.atan2(dy,dx);context.save();context.translate(cx,cy);context.rotate(angle);context.beginPath();context.arc(0,0,size/2,0,Math.PI*2);context.stroke();context.beginPath();context.arc(size*0.4,0,size*0.1,0,Math.PI*2);context.fill();context.restore();};_this.onMouseMove=function(context,rect,size,event){var x=event.clientX-rect.left;var y=event.clientY-rect.top;context.clearRect(0,0,size*2+10,size+10);_this.drawEye(context,size,x,y,size/2+5,size/2+5);_this.drawEye(context,size,x,y,size*1.5+5,size/2+5);};_this.eyes=function(x,y,size,event){var canvas=document.createElement('canvas');var context=canvas.getContext('2d');document.body.appendChild(canvas);canvas.style.position='absolute';canvas.style.left="".concat(x-size-5,"px");canvas.style.top="".concat(y-size/2-5,"px");var rect=canvas.getBoundingClientRect();canvas.width=size*2+10;canvas.height=size+10;_this.onMouseMove(context,rect,size,event);window.addEventListener('mousemove',_this.onMouseMove.bind(null,context,rect,size));};return _this;}createClass_default()(XEyes,[{key:"componentDidMount",value:function componentDidMount(){var _this2=this;window.addEventListener('click',function(e){_this2.eyes(e.clientX,e.clientY,20+Math.random()*50,e);});}},{key:"render",value:function render(){return/*#__PURE__*/react_default.a.createElement("div",{id:"info",__self:this,__source:{fileName:XEyes_jsxFileName,lineNumber:54,columnNumber:16}},"Click to add eyes");}}]);return XEyes;}(react_default.a.Component);/* harmony default export */ var src_XEyes = (src_XEyes_XEyes);
 // CONCATENATED MODULE: ./src/Routes.js
-var _this=undefined,Routes_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Routes.js";/* harmony default export */ var Routes = (function(){return/*#__PURE__*/react_default.a.createElement(react_router["c" /* Switch */],{__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:9,columnNumber:5}},/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{exact:true,path:"/",__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:10,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(Home,{__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:11,columnNumber:13}})),/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{exact:true,path:"/error",__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:13,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(src_Error,{__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:14,columnNumber:13}})),/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:16,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(src_Error404,{__self:_this,__source:{fileName:Routes_jsxFileName,lineNumber:17,columnNumber:13}})));});
+var Routes_this=undefined,Routes_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/Routes.js";/* harmony default export */ var Routes = (function(){return/*#__PURE__*/react_default.a.createElement(react_router["c" /* Switch */],{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:10,columnNumber:5}},/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{exact:true,path:"/",__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:11,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(Home,{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:12,columnNumber:13}})),/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{exact:true,path:"/xeyes",__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:14,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(src_XEyes,{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:15,columnNumber:13}})),/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{exact:true,path:"/error",__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:17,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(src_Error,{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:18,columnNumber:13}})),/*#__PURE__*/react_default.a.createElement(react_router["a" /* Route */],{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:20,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(src_Error404,{__self:Routes_this,__source:{fileName:Routes_jsxFileName,lineNumber:21,columnNumber:13}})));});
 // EXTERNAL MODULE: ./src/App.css
-var src_App = __webpack_require__(28);
+var src_App = __webpack_require__(37);
 
 // CONCATENATED MODULE: ./src/App.js
 var App_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/App.js";function App_App(){return/*#__PURE__*/react_default.a.createElement(react_router_dom["a" /* BrowserRouter */],{__self:this,__source:{fileName:App_jsxFileName,lineNumber:11,columnNumber:9}},/*#__PURE__*/react_default.a.createElement(Routes,{__self:this,__source:{fileName:App_jsxFileName,lineNumber:12,columnNumber:13}}));}/* harmony default export */ var src_App_0 = (App_App);
@@ -163,5 +195,5 @@ var src_jsxFileName="/Users/chetanya/projects/availchet.github.io/src/index.js";
 
 /***/ })
 
-},[[17,1,2]]]);
+},[[22,1,2]]]);
 //# sourceMappingURL=0.app.bundle.js.map
