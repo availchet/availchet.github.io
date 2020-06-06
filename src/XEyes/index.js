@@ -3,11 +3,45 @@ import React from 'react';
 import './XEyes.css';
 
 class XEyes extends React.Component {
-    componentDidMount() {
-        window.addEventListener('click', e => {
-            this.eyes(e.clientX, e.clientY, 20 + Math.random() * 50, e);
-        });
+    constructor(props) {
+        super(props);
+        this.state = {
+            mouseX: 0,
+            mouseY: 0,
+            eyes: [],
+        };
     }
+
+    componentDidMount() {
+        window.addEventListener('mousemove', this.onMouseMove);
+        window.addEventListener('click', this.addEyes);
+    }
+
+    onMouseMove = event => {
+        this.setState({
+            mouseX: event.clientX,
+            mouseY: event.clientY,
+        });
+    };
+
+    addEyes = e => {
+        const x = e.clientX;
+        const y = e.clientY;
+        const size = 20 + Math.random() * 50;
+        const canvas = document.createElement('canvas');
+
+        canvas.style.position = 'absolute';
+        canvas.style.left = `${x - size - 5}px`;
+        canvas.style.top = `${y - size / 2 - 5}px`;
+        canvas.width = size * 2 + 10;
+        canvas.height = size + 10;
+
+        document.body.appendChild(canvas);
+
+        this.setState(prevState => ({
+            eyes: [...prevState.eyes, { x, y, size, canvas }],
+        }));
+    };
 
     drawEye = (context, size, x, y, cx, cy) => {
         const dx = x - cx;
@@ -25,32 +59,23 @@ class XEyes extends React.Component {
         context.restore();
     };
 
-    onMouseMove = (context, rect, size, event) => {
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
-        context.clearRect(0, 0, size * 2 + 10, size + 10);
-        this.drawEye(context, size, x, y, size / 2 + 5, size / 2 + 5);
-        this.drawEye(context, size, x, y, size * 1.5 + 5, size / 2 + 5);
-    };
-
-    eyes = (x, y, size, event) => {
-        const canvas = document.createElement('canvas');
+    renderEyes = (x, y, size, canvas) => {
         const context = canvas.getContext('2d');
-        document.body.appendChild(canvas);
-        canvas.style.position = 'absolute';
-        canvas.style.left = `${x - size - 5}px`;
-        canvas.style.top = `${y - size / 2 - 5}px`;
-
         const rect = canvas.getBoundingClientRect();
-        canvas.width = size * 2 + 10;
-        canvas.height = size + 10;
 
-        this.onMouseMove(context, rect, size, event);
+        context.clearRect(0, 0, size * 2 + 10, size + 10);
 
-        window.addEventListener('mousemove', this.onMouseMove.bind(null, context, rect, size));
+        const { mouseX, mouseY } = this.state;
+        const drawX = mouseX - rect.left;
+        const drawY = mouseY - rect.top;
+
+        this.drawEye(context, size, drawX, drawY, size / 2 + 5, size / 2 + 5);
+        this.drawEye(context, size, drawX, drawY, size * 1.5 + 5, size / 2 + 5);
     };
 
     render() {
+        const { eyes } = this.state;
+        eyes.map(({ x, y, size, canvas }) => this.renderEyes(x, y, size, canvas));
         return <div id="info">Click to add eyes</div>;
     }
 }
