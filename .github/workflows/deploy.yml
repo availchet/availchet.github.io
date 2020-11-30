@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to github pages
         run: |
           npm run predeploy
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/Brightscout/phylum-web.git
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/availchet/availchet.github.io.git
           npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
