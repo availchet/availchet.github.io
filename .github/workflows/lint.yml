@@ -1,0 +1,76 @@
+# Lint Workflow to check on every commit and pull requests
+# to check if the code style guidelines are followed
+name: lint, test and build
+
+on:
+  push:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  lint:
+    name: Check for style guide compliance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies based on package-lock.json
+        run: npm ci
+        env:
+          CI: true
+
+      - name: Lint Code Base
+        uses: github/super-linter@v3
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          LINTER_RULES_PATH: .github/linters
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          VALIDATE_TYPESCRIPT_STANDARD: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_MARKDOWN: false
+          DEFAULT_BRANCH: develop
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  test:
+    name: Run tests and build the app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies based on package-lock.json
+        run: npm ci
+        env:
+          CI: true
+
+      - name: Run Tests
+        run: npm test
+        env:
+          CI: true
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
