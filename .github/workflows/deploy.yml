@@ -1,0 +1,38 @@
+# Continuous Integration Workflow to check on every push and pull request:
+# to deploy the built webapp to gh-pages
+name: deploy to gh-pages
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js v12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies based on package-lock.json
+        run: npm ci
+
+      - name: Deploy to github pages
+        run: |
+          npm run predeploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/Brightscout/phylum-web.git
+          npx gh-pages -d dist -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
