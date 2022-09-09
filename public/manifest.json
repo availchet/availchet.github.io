@@ -50,6 +50,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": ".",
+    "start_url": "https://availchet.github.io",
     "display": "standalone"
 }

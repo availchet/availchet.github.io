@@ -6,10 +6,10 @@ import Logo from '../assets/images/logo.png';
 export default function Header() {
     return (
         <header className="header-container clearfix">
-            <a href={'/'} className={'site-avatar'}>
+            <a href="/" className="site-avatar">
                 <img src={Logo} alt="Logo" />
             </a>
-            <nav className={'header-nav'}>
+            <nav className="header-nav">
                 <ul>
                     <li>
                         <NavLink to="/" exact activeClassName="nav-link-selected">

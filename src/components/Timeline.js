@@ -57,12 +57,11 @@ export default function Home() {
 
     return (
         <VerticalTimeline
-            className={'vertical-timeline-container'}
+            className="vertical-timeline-container"
             animate={false}
             lineColor="#000"
         >
-            {timelineData.map(item => {
-                return (
+            {timelineData.map(item => (
                     <VerticalTimelineElement
                         id={item.id}
                         key={item.id}
@@ -76,10 +75,9 @@ export default function Home() {
                         <h3 className="vertical-timeline-element-title">{item.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle">{item.subtitle}</h4>
                     </VerticalTimelineElement>
-                );
-            })}
+                ))}
             <VerticalTimelineElement
-                id={'vertical-timeline-icon-star'}
+                id="vertical-timeline-icon-star"
                 iconStyle={{ background: '#aaa', border: '#000' }}
                 icon={<StarIcon />}
             />

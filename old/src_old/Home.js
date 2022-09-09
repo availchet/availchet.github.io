@@ -1,11 +1,11 @@
 import React from 'react';
 
-import ProfileImage from 'assets/profile.jpeg';
-import LinkedInIcon from 'assets/linkedin.svg';
-import GitHubIcon from 'assets/github.svg';
-import MailIcon from 'assets/mail.svg';
-import ResumeIcon from 'assets/resume.svg';
-import HeartIcon from 'assets/heart.svg';
+import ProfileImage from 'old/src_old/assets/profile.jpeg';
+import LinkedInIcon from 'old/src_old/assets/linkedin.svg';
+import GitHubIcon from 'old/src_old/assets/github.svg';
+import MailIcon from 'old/src_old/assets/mail.svg';
+import ResumeIcon from 'old/src_old/assets/resume.svg';
+import HeartIcon from 'old/src_old/assets/heart.svg';
 
 function App() {
     return (

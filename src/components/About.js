@@ -1,8 +1,10 @@
+import React from 'react';
+
 export default function About() {
     return (
         <div className="about-wrapper">
             <div>
-                <h1>Hi, I'm Chetanya! 👋</h1>
+                <h1>{'Hi, I\'m Chetanya! 👋'}</h1>
                 <blockquote>
                     <p>💻 Full-stack Software Engineer | Go + React</p>
                 </blockquote>

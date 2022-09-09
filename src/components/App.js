@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 export default function App() {
     return (
-        <Router basename={'/~kandharc/portfolio'}>
+        <Router basename="/">
             <div>
                 <Header />
 

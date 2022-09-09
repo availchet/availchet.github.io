@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Personal Website
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Favailchet%2Favailchet.github.io.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Favailchet%2Favailchet.github.io?ref=badge_shield)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal webpage for showcasing my projects and having links to all my profiles.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Favailchet%2Favailchet.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Favailchet%2Favailchet.github.io?ref=badge_large)
 
 ## Available Scripts
 

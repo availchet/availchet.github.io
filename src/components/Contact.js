@@ -36,7 +36,7 @@ export default function Contact() {
                                 name="message"
                                 placeholder="Message"
                                 spellCheck="false"
-                                defaultValue={''}
+                                defaultValue=""
                                 rows={5}
                                 maxLength={2000}
                             />

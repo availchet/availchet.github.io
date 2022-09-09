@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image404 from 'assets/oh_snap_404.jpg';
+import Image404 from 'old/src_old/assets/oh_snap_404.jpg';
 
 function Error404() {
     return (
