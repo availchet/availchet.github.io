@@ -66,7 +66,7 @@ function App() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="author-link"
-                        href="http://github.com/availchet"
+                        href="https://github.com/availchet"
                     >
                         Chetanya Kandhari
                     </a>
