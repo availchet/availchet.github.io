@@ -2,6 +2,22 @@ import React from 'react';
 
 import './XEyes.css';
 
+const drawEye = function (context, size, x, y, cx, cy) {
+    const dx = x - cx;
+    const dy = y - cy;
+    const angle = Math.atan2(dy, dx);
+    context.save();
+    context.translate(cx, cy);
+    context.rotate(angle);
+    context.beginPath();
+    context.arc(0, 0, size / 2, 0, Math.PI * 2);
+    context.stroke();
+    context.beginPath();
+    context.arc(size * 0.4, 0, size * 0.1, 0, Math.PI * 2);
+    context.fill();
+    context.restore();
+};
+
 class XEyes extends React.Component {
     constructor(props) {
         super(props);
@@ -15,6 +31,12 @@ class XEyes extends React.Component {
     componentDidMount() {
         window.addEventListener('mousemove', this.onMouseMove);
         window.addEventListener('click', this.addEyes);
+    }
+
+    componentWillUnmount() {
+        this.setState({eyes: []});
+        window.removeEventListener('mousemove', this.onMouseMove);
+        window.removeEventListener('click', this.addEyes);
     }
 
     onMouseMove = event => {
@@ -43,22 +65,6 @@ class XEyes extends React.Component {
         }));
     };
 
-    drawEye = (context, size, x, y, cx, cy) => {
-        const dx = x - cx;
-        const dy = y - cy;
-        const angle = Math.atan2(dy, dx);
-        context.save();
-        context.translate(cx, cy);
-        context.rotate(angle);
-        context.beginPath();
-        context.arc(0, 0, size / 2, 0, Math.PI * 2);
-        context.stroke();
-        context.beginPath();
-        context.arc(size * 0.4, 0, size * 0.1, 0, Math.PI * 2);
-        context.fill();
-        context.restore();
-    };
-
     renderEyes = (x, y, size, canvas) => {
         const context = canvas.getContext('2d');
         const rect = canvas.getBoundingClientRect();
@@ -69,8 +75,8 @@ class XEyes extends React.Component {
         const drawX = mouseX - rect.left;
         const drawY = mouseY - rect.top;
 
-        this.drawEye(context, size, drawX, drawY, size / 2 + 5, size / 2 + 5);
-        this.drawEye(context, size, drawX, drawY, size * 1.5 + 5, size / 2 + 5);
+        drawEye(context, size, drawX, drawY, size / 2 + 5, size / 2 + 5);
+        drawEye(context, size, drawX, drawY, size * 1.5 + 5, size / 2 + 5);
     };
 
     render() {

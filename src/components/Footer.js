@@ -70,7 +70,7 @@ export default function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-title="Résumé"
-                    href="/ChetanyaKandhariResume.pdf"
+                    href="/assets/ChetanyaKandhariResume.pdf"
                 >
                     <ResumeIcon
                         className="social-link-icon"

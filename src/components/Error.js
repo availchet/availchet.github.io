@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image500 from 'old/src_old/assets/oh_snap.jpg';
+import Image500 from 'assets/icons/oh_snap.jpg';
 
 function Error() {
     return (
