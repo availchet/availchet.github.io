@@ -1,19 +1,35 @@
 /* the following import is used by react-scripts to bring in the normalize.css styles */
 @import-normalize;
 
+/* Import custom fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
 /***************************/
 /*  Common Styles          */
 /***************************/
 
 body {
-    margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif;
+    background-color: #FFF7F0;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+::selection {
+  color: #fff;
+  background-color: #755CDE;
+}
+
+::placeholder {
+  color: #000;
 }
 
 h1,
@@ -52,10 +68,19 @@ h4 {
 .header-container {
     padding: 20px 10px;
     margin: 0 auto;
-    max-width: 850px;
+    width: 100%;
     border-bottom: 1px solid #eee;
 
+    .header-inner {
+        max-width: 850px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .site-avatar {
+        display: flex;
         float: left;
         margin-right: 15px;
 
@@ -70,6 +95,13 @@ h4 {
         float: right;
         margin-top: 6px;
         font-size: 18px;
+        display: inline-block;
+        vertical-align: middle;
+
+        ul {
+          margin: 0;
+          padding: 0;
+        }
 
         li {
             list-style-type: none;
@@ -77,16 +109,43 @@ h4 {
         }
 
         a {
-            margin-left: 20px;
-            color: #333;
-            text-align: right;
-            font-weight: 300;
-            letter-spacing: 1px;
+            white-space: nowrap;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
+            box-sizing: border-box;
+            padding-left: 14px;
+            padding-right: 14px;
+            display: inline-block;
+            width: auto;
+            border-radius: 4px;
+            position: relative;
+            line-height: 1;
+            user-select: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            background-color: transparent;
+            color: #495057;
+            padding: 14px 30px;
+            letter-spacing: 1px;
+        }
+
+        a:hover {
+            background-color: #755cde;
+            color: #fff;
+            border-radius: 35px;
+        }
+
+        a:active, a:hover {
+            outline-width: 0;
         }
 
         .nav-link-selected {
-            font-weight: 500;
+            font-weight: 600;
+            background-color: #000;
+            color: #fff;
+            border-radius: 35px;
         }
     }
 }
@@ -151,13 +210,15 @@ h4 {
     }
 
     &:hover {
-        fill: indigo;
+        fill: #755cde;
+        white-space: pre-wrap;
 
         &:before {
             opacity: 1;
             display: inline-block;
-            transform: translate3d(0, 0, 0);
             white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         &:after {
@@ -214,16 +275,22 @@ h4 {
     height: 100%;
     width: 96%;
     margin: 0 auto;
-    max-width: 560px;
+    max-width: 1110px;
     margin-top: 125px;
 }
 
-.home-container__center {
-    display: block;
+.home-container__inner {
+    display: flex;
     margin: 0 auto;
+    align-items: center;
     text-align: center;
     position: relative;
-    z-index: 99;
+    justify-content: space-between;
+    flex-direction: column;
+
+    article {
+        width: 50%;
+    }
 }
 
 .home-container__animated {
@@ -233,8 +300,9 @@ h4 {
 }
 
 .home-profile-pic {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+      height: 300px;
+    max-width: 450px;
     margin-bottom: 25px;
     border-radius: 100%;
     transition: all 0.2s;
@@ -243,20 +311,18 @@ h4 {
 }
 
 .home-title {
-    font-size: 3rem;
-    margin: 10px 0 12px;
-    letter-spacing: -1px;
-    color: #222;
-    font-weight: 700;
+  font-size: 2em;
+  margin: 10px 0 12px;
+  letter-spacing: 0.08rem;
+  color: #222;
+  font-weight: 700;
+  line-height: 1.2em;
 }
 
 .home-description {
-    font-size: 1.5rem;
-    font-weight: 300;
-    font-style: normal;
-    color: #aaa;
-    width: 70%;
-    margin: 0 auto 30px;
+    color: #7a746e;
+    font-size: 1.15em;
+    line-height: 1.75em;
 }
 
 /***************************/
@@ -354,12 +420,10 @@ blockquote {
 }
 
 .contact-header {
-    font-weight: 300;
-    color: #666;
-    line-height: 1.5em;
-    font-size: 2em;
-    letter-spacing: -1px;
-    margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 2.5em;
+  letter-spacing: .08rem;
+  color: #000;
 }
 
 .contact-text {
@@ -426,8 +490,15 @@ blockquote {
     float: right;
     margin-top: 10px;
     margin-right: -8px;
-    border-radius: 4px;
-    background-color: #555555;
+
+    height: 3.5em;
+    letter-spacing: .03em;
+    border-radius: 9999px;
+    background-color: #000;
+
+    &:hover {
+      background-color: #755cde;
+    }
 
     &:focus {
         box-shadow: 0 0 0 1px #1264a3, 0 0 0 5px rgba(29, 155, 209, 0.3);

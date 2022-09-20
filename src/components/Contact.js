@@ -6,8 +6,9 @@ export default function Contact() {
             <article>
                 <h2 className="contact-header">Contact Me</h2>
                 <p className="contact-text">
-                    If you are interested in teaming up with me for a hackathon, start-up
-                    consulting, or even for a cup of coffee - you can reach me at my email or
+                    I’d love to have a chat to see how I can help you.
+                    The best first step is for us to discuss your project during a free consultation.
+                    Then we can move forward from there.
                 </p>
                 <form>
                     <div className="contact-form-container">

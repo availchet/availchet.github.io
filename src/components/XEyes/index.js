@@ -31,12 +31,14 @@ class XEyes extends React.Component {
     componentDidMount() {
         window.addEventListener('mousemove', this.onMouseMove);
         window.addEventListener('click', this.addEyes);
+        document.body.style.overflow = 'hidden';
     }
 
     componentWillUnmount() {
         this.setState({eyes: []});
         window.removeEventListener('mousemove', this.onMouseMove);
         window.removeEventListener('click', this.addEyes);
+        document.body.style.overflow = 'auto';
     }
 
     onMouseMove = event => {
